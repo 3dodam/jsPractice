@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 함수
+    // 함수는 하나의 실행문을 저장하고 변수는 하나의 데이터를 저장하여 사용합니다.
+    // 함수는 스크립트 실행문을 보관하는 역할을 하기 때문에 반복 사용되는 코드를 구조화하거나 재활용을 목적으로 사용합니다.
+    
+    // 함수에서 사용되는 용어
+    // 매개변수: 함수에 자료를 넘기기 위한 변수
+    // 리턴값: 함수를 실행하고 나오는 결과 값
+    // 콜백함수: 함수에 매개변수로 함수를 전달할 때 사용하는 함수
+    // 호출: 함수 내부를 실행시킬때 호출이라고 표현
+    
+
+    /* for (let i = 0; i < 5; i++) {
+      document.write(`이것은 빨간색${i}입니다<br/>`)
+    }
+    for (let i = 0; i < 5; i++) {
+      document.write(`이것은 파란색${i}입니다<br/>`)
+    }
+    for (let i = 0; i < 5; i++) {
+      document.write(`이것은 초록색${i}입니다<br/>`)
+    } */
+
+    function colorName(color) {
+      for (let i=0; i<5; i++) {
+        document.write(`이것은 ${color}${i}입니다<br/>`)
+      }
+    }
+    colorName("빨간색"); //호출
+    colorName("파란색"); //호출
+    colorName("초록색"); //호출
+
+    //선언적 함수
+    // 가장 기본적으로 사용하는 함수의 형태입니다.
+    // 기본적으로 함수는 함수 이름을 설정하고 함수이름을 호출해야 실행이 됩니다.
+
+    방앗간("송편") //선언한 함수를 컴퓨터가 먼저 저장하기 때문에 함수 선언 이전에 쓰여도 인식이 됨 (hoisting)
+
+    function 방앗간(대야) /* 이게 선언임 */ {
+      console.log(대야 + "먹고싶다")
+    }
+    방앗간("쑥떡")
+    방앗간("가래떡")
+    방앗간("꿀떡")
+    방앗간("무지개떡")
+    방앗간("백설기")
+    방앗간("시루떡")
+    방앗간("세상의모든떡")
+    방앗간("맛있겠다")
+    방앗간("배고프다")
+
+
+    function 정인(언니) {
+      console.log(언니 + "보고싶다")
+    }
+    정인("정인 언니 너무 ")
+    정인("자기야 ")
+    정인("사랑행 ")
+    정인(">< ")
+    정인("ㅇ.< ")
+  </script>
+</body>
+
+</html>
